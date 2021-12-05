@@ -31,3 +31,6 @@ func main() {
 
 	fmt.Println("hello word!")
 }
+
+// 编译命令
+// go build -ldflags "-X main.appName=ldflagsDemo -X main.buildTime=` date +%Y-%m-%d,%H:%M:%S` -X main.buildVersion=1.1.0 -X main.gitCommitID=` git rev-parse HEAD`"
